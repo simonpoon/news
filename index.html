@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="dist/output.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
@@ -17,12 +17,12 @@
 
   <div class="w-full">
 
-    <div class="relative flex pb-8 mx-auto max-w-7xl">
-      <div class="absolute bottom-0 right-14"><img src="img/hkbg.png" /><img class="absolute bottom-0 ship left-24"
+    <div class="relative flex pb-8 mx-auto max-w-7xl min-h-[142px] ">
+      <div class="absolute bottom-0 right-0 xl:right-14"><img src="img/hkbg.png" /><img class="absolute bottom-0 ship left-24"
           src="img/ship.png" alt=""></div>
-      <div class="px-3 py-3 rounded-b-lg bg-body"><a href="http://news.hongkongmetas.com"><img src="img/logo.png" /></a>
+      <div class="absolute top-0 left-0 px-3 py-3 rounded-b-lg bg-body"><a href="http://news.hongkongmetas.com"><img src="img/logo.png" /></a>
       </div>
-      <div class="absolute flex gap-3 mt-3 ml-48 text-2xl font-bold">
+      <div class="absolute flex flex-wrap gap-3 mt-3 ml-48 text-2xl font-bold">
         <a href="#" class="hover:text-over">政治</a>
         <a href="#" class="hover:text-over">經濟</a>
         <a href="#" class="hover:text-over">生活</a>
@@ -32,7 +32,7 @@
       </div>
 
 
-      <div class="absolute mt-3 right-3">
+      <div class="absolute invisible mt-3 xl:visible right-3">
         <div class="text-2xl font-bold">Hong Kong Metas</div>
         <div class="flex">
 
@@ -129,7 +129,7 @@
 
   <div class="flex-wrap px-4 xl:flex max-w-7xl">
     <!-- Middle container -->
-    <div class="container flex flex-col xl:w-65% w-full gap-4 xl:pr-4">
+    <div class="flex flex-col xl:w-65% w-full gap-4 xl:pr-4">
 
       <!-- Main story -->
       <div id="search-results">
@@ -137,16 +137,16 @@
           <div class="text-2xl font-bold">重點新聞</div>
         </div>
         <a href="single.html">
-          <div class="flex w-full h-auto drop-shadow-md bg-card">
+          <div class="w-full h-auto md:flex drop-shadow-md bg-card">
 
-            <div class="w-2/3"><img class="object-cover object-left-top" src="img/dummy_data/cover-story.jpg" alt="">
+            <div class="w-full xl:w-2/3"><img class="object-cover object-left-top w-full" src="img/dummy_data/cover-story.jpg" alt="">
             </div>
 
-            <div class="w-1/3 bg-card">
+            <div class="xl:w-1/3 bg-card">
               <div class="container flex flex-col gap-2 px-2 py-2 xl:py-4 xl:px-4">
                 <div class="title line-clamp-3 min-h-[40px]">竹篙灣隔離無期 陰性結果無得走 有人崩潰出房哭喊「我要返去！」
                 </div>
-                <div class="line-clamp-6 min-h-[90px]">
+                <div class="xl:line-clamp-6 line-clamp-3 min-h-[90px]">
                   檢疫設施爆棚，多人染疫仍需留在家中，但另一邊箱，多名身處竹篙灣的檢疫人士向《獨媒》投訴，隔離營內安排混亂，檢測陰性和沒有病徵的人出營無期，有人因此走出房外崩潰大哭大叫。此外，有母親獨自帶同4個月大的嬰兒入營，但全程沒有職員主動提供資訊或協助，嘆「成件事好癡線」。亦有人一直收不到快速檢測的結果，致電查詢才揭發當局失誤，一直沒收到其健康申報表，險因此無法出營。
                 </div>
                 <div class="datetime line-clamp-1">2022年01月30日 10:49</div>
@@ -157,12 +157,12 @@
         </a>
         <!-- Main story end -->
 
-        <div class="container grid flex-wrap w-full grid-cols-2 gap-4 mt-4 sm:grid-cols-3">
+        <div class="grid w-full grid-cols-2 gap-4 mt-4 sm:grid-cols-3">
 
           <!-- Card 1 -->
           <a href="#">
-            <div class="container bg-card drop-shadow-md">
-              <div class="container flex flex-col gap-2">
+            <div class="bg-card drop-shadow-md">
+              <div class="flex flex-col gap-2">
                 <img class="object-cover object-left-top w-full aspect-4/3" src="img/dummy_data/1.jpg" alt="">
                 <div class="title mx-2 xl:mx-4 line-clamp-2 min-h-[55px]">食環署年宵取消 民間自辦北區市集
                 </div>
@@ -177,8 +177,8 @@
 
           <!-- Card 2 -->
           <a href="#">
-            <div class="container bg-card drop-shadow-md">
-              <div class="container flex flex-col gap-2">
+            <div class="bg-card drop-shadow-md">
+              <div class="flex flex-col gap-2">
                 <img class="object-cover object-left-top w-full aspect-4/3" src="img/dummy_data/2.jpg" alt="">
                 <div class="title mx-2 xl:mx-4 line-clamp-2 min-h-[55px]">調查指兒童飲食不均衡 營養師教路改阿媽煮餸方式
                 </div>
@@ -193,8 +193,8 @@
 
           <!-- Card 3 -->
           <a href="#">
-            <div class="container bg-card drop-shadow-md">
-              <div class="container flex flex-col gap-2">
+            <div class="bg-card drop-shadow-md">
+              <div class="flex flex-col gap-2">
                 <img class="object-cover object-left-top w-full aspect-4/3" src="img/dummy_data/3.jpg" alt="">
                 <div class="title mx-2 xl:mx-4 font-bold line-clamp-2 min-h-[55px]">增120宗確診11宗源頭不明 2人帶Delta居新光中心、安達邨
                 </div>
@@ -210,10 +210,10 @@
 
           <!-- Card 4 -->
           <a href="#">
-            <div class="container bg-card drop-shadow-md">
-              <div class="container flex flex-col gap-2">
+            <div class="bg-card drop-shadow-md">
+              <div class="flex flex-col gap-2">
                 <img class="object-cover object-left-top w-full aspect-4/3" src="img/dummy_data/4.jpg" alt="">
-                <div class="title mx-2 xl:mx-4 line-clamp-2 min-h-[40px]">食環署年宵取消 民間自辦北區市集
+                <div class="title mx-2 xl:mx-4 font-bold line-clamp-2 min-h-[55px]">食環署年宵取消 民間自辦北區市集
                 </div>
                 <div class="mx-2 xl:mx-4 line-clamp-3 min-h-[90px]">
                   食環署取消各區年宵，不過有民間自發舉辦的市集，今年繼續舉行。在北區，搞手在燒烤場舉辦市集，稱望「為無法出國旅遊的香港人增添一點新年氣氛。」
@@ -226,10 +226,10 @@
 
           <!-- Card 5 -->
           <a href="#">
-            <div class="container bg-card drop-shadow-md">
-              <div class="container flex flex-col gap-2">
+            <div class="bg-card drop-shadow-md">
+              <div class="flex flex-col gap-2">
                 <img class="object-cover object-left-top w-full aspect-4/3" src="img/dummy_data/5.jpg" alt="">
-                <div class="title mx-2 xl:mx-4 line-clamp-2 min-h-[40px]">竹篙灣隔離無期 陰性結果無得走 有人崩潰出房哭喊「我要返去！」
+                <div class="title mx-2 xl:mx-4 font-bold line-clamp-2 min-h-[55px]">竹篙灣隔離無期 陰性結果無得走 有人崩潰出房哭喊「我要返去！」
                 </div>
                 <div class="mx-2 xl:mx-4 line-clamp-3 min-h-[90px]">
                   檢疫設施爆棚，多人染疫仍需留在家中，但另一邊箱，多名身處竹篙灣的檢疫人士向《獨媒》投訴，隔離營內安排混亂，檢測陰性和沒有病徵的人出營無期，有人因此走出房外崩潰大哭大叫。此外，有母親獨自帶同4個月大的嬰兒入營，但全程沒有職員主動提供資訊或協助，嘆「成件事好癡線」。亦有人一直收不到快速檢測的結果，致電查詢才揭發當局失誤，一直沒收到其健康申報表，險因此無法出營。
@@ -238,14 +238,14 @@
               </div>
             </div>
           </a>
-          <!-- Card 5 end -->
+          <!-- Card 5 end -->          
 
           <!-- Card 6 -->
           <a href="#">
-            <div class="container bg-card drop-shadow-md">
-              <div class="container flex flex-col gap-2">
+            <div class="bg-card drop-shadow-md">
+              <div class="flex flex-col gap-2">
                 <img class="object-cover object-left-top w-full aspect-4/3" src="img/dummy_data/6.jpg" alt="">
-                <div class="title mx-2 xl:mx-4 line-clamp-2 min-h-[40px]">前支聯會常委趙恩來刑滿出獄：做好自己、等待黎明
+                <div class="title mx-2 xl:mx-4 font-bold line-clamp-2 min-h-[55px]">前支聯會常委趙恩來刑滿出獄：做好自己、等待黎明
                 </div>
                 <div class="mx-2 xl:mx-4 line-clamp-3 min-h-[90px]">
                   前支聯會常委及前荃灣區議員趙恩來被控前年六四在維園「煽惑他人明知而參與未經批准集結」和「明知而參與未經批准集結」，罪成被判入獄8個月。趙恩來今早完成服刑，步出白沙灣監獄，他清減了不少，籲港人保重，「雖然我哋宜家控制唔到自己嘅命運，但都希望大家可以堅持，喺唔同崗位做好自己，等待黎明到來。」
@@ -254,8 +254,7 @@
               </div>
             </div>
           </a>
-          <!-- Card 6 end -->
-
+          <!-- Card 6 end -->            
 
         </div>
       </div>
@@ -279,7 +278,7 @@
                   clip-rule="evenodd"></path>
               </svg>
             </div>
-            <input type="text" placeholder="搜索"
+            <input id="searchInput" type="text" placeholder="搜索"
               class="block w-full px-3 pt-[0.4rem] pb-[0.35rem] pl-10 text-sm ring-1 ring-slate-900/10 text-slate-500 focus:outline-none focus:ring-2 focus:ring-body">
           </div>
         </div>
