@@ -506,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   pointer-events: auto;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -550,12 +554,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
+.left-4 {
+  left: 1rem;
 }
 
 .right-3 {
   right: 0.75rem;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .-left-12 {
@@ -694,12 +702,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-7 {
   height: 1.75rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-12 {
@@ -750,12 +758,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
 .w-5 {
   width: 1.25rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-10\/12 {
@@ -1425,10 +1433,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1445,8 +1449,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     visibility: visible;
   }
 
+  .xl\:invisible {
+    visibility: hidden;
+  }
+
   .xl\:right-14 {
     right: 3.5rem;
+  }
+
+  .xl\:left-0 {
+    left: 0px;
   }
 
   .xl\:mx-4 {
@@ -1469,6 +1481,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
   }
 
   .xl\:h-700px {
