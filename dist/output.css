@@ -642,36 +642,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.25rem;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mt-\[14px\] {
-  margin-top: 14px;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .block {
@@ -714,16 +694,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 700px;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-8 {
   height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-24 {
@@ -770,14 +746,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-\[140px\] {
-  width: 140px;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -788,6 +756,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-24 {
   width: 6rem;
+}
+
+.w-\[170px\] {
+  width: 170px;
+}
+
+.w-\[140px\] {
+  width: 140px;
 }
 
 .min-w-\[400px\] {
@@ -1083,11 +1059,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-5 {
@@ -1474,11 +1445,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 1rem;
   }
 
-  .xl\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .xl\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -1495,14 +1461,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .xl\:h-700px {
-    height: 700px;
-  }
-
-  .xl\:h-\[calc\(100\%-3rem\)\] {
-    height: calc(100% - 3rem);
-  }
-
   .xl\:w-65\% {
     width: 65%;
   }
@@ -1517,10 +1475,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:w-35\% {
     width: 35%;
-  }
-
-  .xl\:overflow-auto {
-    overflow: auto;
   }
 
   .xl\:py-4 {
@@ -1542,12 +1496,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:visible {
-    visibility: visible;
   }
 }
 
